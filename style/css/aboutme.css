@@ -1,0 +1,94 @@
+/*************************/
+.intro-back {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  color: #ffffff;
+}
+.intro-back .aboutme-photo {
+  padding-top: 40px;
+  text-align: center;
+}
+.intro-back .aboutme-photo .social-link {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.intro-back .aboutme-photo .social-link span {
+  margin-right: 15px;
+}
+.intro-back .aboutme-photo .social-link span a {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+.intro-back .aboutme-photo .social-link span a:hover {
+  border-bottom: 1px solid #5DADE2;
+}
+.intro-back .aboutme-photo .social-link span:last-child {
+  margin-right: 0;
+}
+.intro-back .aboutme-photo .social-link i {
+  transition: all 0.3s;
+}
+.intro-back .aboutme-photo .social-link i:hover {
+  color: #5DADE2;
+}
+.intro-back .aboutme-info {
+  padding-top: 60px;
+}
+.intro-back .aboutme-info h2 {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 1.4em;
+  padding-bottom: 20px;
+}
+.intro-back .aboutme-info p {
+  color: #bac2c1;
+  font-size: 0.9em;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+}
+.intro-back .aboutme-info a {
+  display: block;
+  margin-top: 30px;
+  position: absolute;
+  font-size: 1em;
+  padding: 10px 15px;
+  border: 1px solid #ffffff;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+.intro-back .aboutme-info a:hover {
+  background: #5DADE2;
+  border: 1px solid #5DADE2;
+  color: #fff;
+  font-weight: 400;
+}
+.intro-back .aboutme-ed-ex-pj {
+  padding-left: 30px;
+}
+.intro-back .aboutme-ed-ex-pj h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+.intro-back .aboutme-ed-ex-pj div {
+  width: 40px;
+  height: 3px;
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+.intro-back .aboutme-ed-ex-pj h3 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.intro-back .aboutme-ed-ex-pj p {
+  color: #bac2c1;
+  font-size: 0.7em;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}

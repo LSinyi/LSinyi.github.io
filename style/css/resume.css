@@ -1,0 +1,357 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #fff;
+}
+a:hover, a:focus, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-describe {
+  display: block;
+  text-align: right;
+  float: right;
+}
+.main-describe h2 {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  font-size: 4em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.main-describe p {
+  margin-bottom: 35px;
+  line-height: 1.5;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.main-describe .btn-more {
+  padding: 10px 25px;
+  font-size: 0.7em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  text-shadow: none;
+  transition: background 0.5s, color 0.5s;
+}
+.main-describe .btn-more:hover {
+  background: #fff;
+  color: #5DADE2;
+  font-weight: 400;
+}
+
+/*************************/
+.intro-back {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  color: #ffffff;
+}
+.intro-back .aboutme-photo {
+  padding-top: 40px;
+  text-align: center;
+}
+.intro-back .aboutme-photo .social-link {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.intro-back .aboutme-photo .social-link span {
+  margin-right: 15px;
+}
+.intro-back .aboutme-photo .social-link span a {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+.intro-back .aboutme-photo .social-link span a:hover {
+  border-bottom: 1px solid #5DADE2;
+}
+.intro-back .aboutme-photo .social-link span:last-child {
+  margin-right: 0;
+}
+.intro-back .aboutme-photo .social-link i {
+  transition: all 0.3s;
+}
+.intro-back .aboutme-photo .social-link i:hover {
+  color: #5DADE2;
+}
+.intro-back .aboutme-info {
+  padding-top: 60px;
+}
+.intro-back .aboutme-info h2 {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 1.4em;
+  padding-bottom: 20px;
+}
+.intro-back .aboutme-info p {
+  color: #bac2c1;
+  font-size: 0.9em;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+}
+.intro-back .aboutme-info a {
+  display: block;
+  margin-top: 30px;
+  position: absolute;
+  font-size: 1em;
+  padding: 10px 15px;
+  border: 1px solid #ffffff;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+.intro-back .aboutme-info a:hover {
+  background: #5DADE2;
+  border: 1px solid #5DADE2;
+  color: #fff;
+  font-weight: 400;
+}
+.intro-back .aboutme-ed-ex-pj {
+  padding-left: 30px;
+}
+.intro-back .aboutme-ed-ex-pj h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+.intro-back .aboutme-ed-ex-pj div {
+  width: 40px;
+  height: 3px;
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+.intro-back .aboutme-ed-ex-pj h3 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.intro-back .aboutme-ed-ex-pj p {
+  color: #bac2c1;
+  font-size: 0.7em;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+/*************************/
+.skills-back {
+  margin: 0;
+  padding: 0;
+  height: 305px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  color: #ffffff;
+}
+.skills-back .skill-program, .skills-back .skill-other {
+  padding-top: 55px;
+  padding-left: 45px;
+}
+.skills-back .skill-program h2, .skills-back .skill-other h2 {
+  position: relative;
+  width: 145px;
+  font-size: 1.7em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+.skills-back .skill-program .divide, .skills-back .skill-other .divide {
+  position: absolute;
+  top: 55px;
+  left: 230px;
+  width: 1px;
+  height: 70px;
+  background: #4c4c4c;
+}
+.skills-back .skill-program .item, .skills-back .skill-other .item {
+  position: absolute;
+  top: 55px;
+  left: 275px;
+}
+.skills-back .skill-program .item ul, .skills-back .skill-other .item ul {
+  margin-top: -5px;
+}
+.skills-back .skill-program .item ul li, .skills-back .skill-other .item ul li {
+  float: left;
+  width: 100px;
+  height: 30px;
+  background: #f7596a;
+  font-size: 0.8em;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.skills-back .skill-program .item ul li.design, .skills-back .skill-other .item ul li.design {
+  background: #e6ad37;
+}
+.skills-back .skill-program .item ul li.tool, .skills-back .skill-other .item ul li.tool {
+  background: #2ebbaf;
+}
+
+/**************************************/
+body {
+  font-family: "Raleway", sans-serif, Microsoft JhengHei;
+}
+
+.backgound-overlay {
+  display: block;
+  position: fixed;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+}
+
+.outer-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.outer-content #left-side {
+  display: block;
+  position: fixed;
+  left: 6.5%;
+  width: 190px;
+  height: 100%;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+#main-content {
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin: 0 7.5% 0 26%;
+  color: #fff;
+}
+#main-content .wrap-section {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#main-content .wrap-section .wrap-content {
+  position: relative;
+  display: block;
+  visibility: visible;
+  width: 100%;
+  margin-bottom: 30%;
+}
+#main-content .wrap-section .wrap-content .content-title {
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+ul.menu {
+  margin-top: 100px;
+  text-align: center;
+}
+ul.menu li {
+  transition: background 0.5s;
+  cursor: pointer;
+  font-size: 1em;
+}
+ul.menu li:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+ul.menu li a {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+.tip-content {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  left: -40px;
+  border-radius: 50%;
+  background: #fff;
+  transform: scale3d(0, 0, 1);
+  transform-origin: 100% 50%;
+  transition: transform 0.3s;
+}
+.tip-content i {
+  position: relative;
+  top: 2px;
+  left: 1px;
+  color: #5DADE2;
+}
+.tip-content:after {
+  position: relative;
+  left: 25px;
+  top: -25px;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 20px;
+  background: url(../tip.svg) no-repeat center center;
+  background-size: 50%;
+  transform: rotate(-90deg);
+}
+
+ul.menu li:hover .tip-content {
+  transform: scale3d(1, 1, 1);
+}
