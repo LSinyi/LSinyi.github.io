@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8" />
-
     <!--FONT-->
     <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
-
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-
     <!-- CSS -->
     <!-- resume.css -->
     <link href="./style/css/resume.css" rel="stylesheet" />
@@ -24,7 +20,6 @@
     <!-- fullpage.css -->
     <!-- <link rel="stylesheet" type="text/css" href="./style/css/jquery.fullPage.css" /> -->
     <link rel="stylesheet" type="text/css" href="./style/css/font-awesome.min.css" />
-
     <!-- JS -->
     <script src="./javascript/resume.js"></script>
     <!-- wow.js -->
@@ -33,15 +28,12 @@
     <script src="./javascript/jquery.backstretch.min.js"></script>
     <!-- fullpage.js -->
     <script type="text/javascript" src="./javascript/jquery.fullPage.js"></script>
-
-
 </head>
 
 <body>
     <!-- overlay -->
     <div class="backgound-overlay"></div>
     <!-- end: overlay -->
-
     <!-- content -->
     <div class="outer-content">
         <!-- left-side -->
@@ -58,7 +50,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">interests
+                    <a href="#interests">interests
                         <span class="tip-content"><i class="fa fa-heart"></i></span>
                     </a>
                 </li>
@@ -68,14 +60,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">contact
+                    <a href="#contact">contact
                         <span class="tip-content"><i class="fa fa-comments"></i></span>
                     </a>
                 </li>
             </ul>
         </section>
         <!-- end: left-side -->
-
         <!-- main -->
         <section id="main-content">
             <!-- home -->
@@ -92,7 +83,6 @@
                 </div>
             </article>
             <!-- end: home -->
-
             <!-- introduce -->
             <article id="introduce" class="wrap-section clearfix">
                 <div class="wrap-content clearfix">
@@ -162,7 +152,6 @@
                 </div>
             </article>
             <!-- end: introduce -->
-
             <!-- skills -->
             <article id="skills" class="wrap-section clearfix">
                 <div class="wrap-content clearfix">
@@ -200,17 +189,91 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </article>
             <!-- end: skills -->
+            <!-- interests -->
+            <article id="interests" class="wrap-section clearfix">
+                <div class="wrap-content clearfix">
+                    <div class="content-title">
+                        Interests
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 inter-collect">
+                            <ul>
+                                <li>
+                                    <div class="item-top top-bg-pink"></div>
+                                    <div class="item-circle">
+                                        <div class="inner-circle">
+                                            <img src="./style/images/baseball.png">
+                                        </div>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <h2>BASEBALL</h2>
+                                        <p>Choose a coverage option. Enter your name,Email and payment info.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-top top-bg-orange"></div>
+                                    <div class="item-circle">
+                                        <div class="inner-circle">
+                                            <img src="./style/images/music.png">
+                                        </div>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <h2>MUSIC</h2>
+                                        <p>Choose a coverage option. Enter your name,Email and payment info.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-top top-bg-skyblue"></div>
+                                    <div class="item-circle">
+                                        <div class="inner-circle">
+                                            <img src="./style/images/koera-drama.png">
+                                        </div>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <h2>KOERA DRAMA</h2>
+                                        <p>Choose a coverage option. Enter your name,Email and payment info.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-top top-bg-blue"></div>
+                                    <div class="item-circle">
+                                        <div class="inner-circle">
+                                            <img src="./style/images/game.png" style="  margin-top: 21px; margin-left: 15px;">
+                                        </div>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <h2>GAMING</h2>
+                                        <p>Choose a coverage option. Enter your name,Email and payment info.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- end: interests -->
 
+
+            <article id="contact" class="wrap-section clearfix">
+                <div class="wrap-content clearfix">
+                    <div class="content-title">
+                        Contact
+                    </div>
+                    <form action="sendmail.php" method="POST">
+                        name: <input type="text" id="c_name" name="c_name"/>
+                        email: <input type="text" id="c_email" name="c_email"/>
+                        message: <input type="textarea" id="message" name="message">
+                        <button type="submit" name="button" id="button">Submit</button>
+                    </form>
+                </div>
+            </article>
         </section>
         <!-- end: main -->
-
     </div>
-
 </body>
 
 </html>

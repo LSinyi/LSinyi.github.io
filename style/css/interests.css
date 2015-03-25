@@ -1,0 +1,70 @@
+/*************************/
+.inter-collect {
+  padding-top: 35px;
+}
+.inter-collect ul li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 260px;
+  margin-right: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.inter-collect ul li .item-top {
+  width: 100%;
+  height: 80px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.inter-collect ul li .top-bg-pink {
+  background: #f7596a;
+}
+.inter-collect ul li .top-bg-orange {
+  background: #e6ad37;
+}
+.inter-collect ul li .top-bg-skyblue {
+  background: #2ebbaf;
+}
+.inter-collect ul li .top-bg-blue {
+  background: #1f8fc9;
+}
+.inter-collect ul li .item-circle {
+  position: absolute;
+  background: #fff;
+  width: 90px;
+  height: 90px;
+  top: 35px;
+  left: 55px;
+  border-radius: 50%;
+}
+.inter-collect ul li .item-circle .inner-circle {
+  background: #434343;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.inter-collect ul li .item-circle .inner-circle img {
+  margin-top: 18px;
+  margin-left: 18px;
+}
+.inter-collect ul li .item-bottom {
+  width: 100%;
+  height: 160px;
+  padding: 0 20px;
+}
+.inter-collect ul li .item-bottom h2 {
+  padding-top: 65px;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #3e3e3e;
+}
+.inter-collect ul li .item-bottom p {
+  padding-top: 20px;
+  font-size: 0.7em;
+  color: #3e3e3e;
+  line-height: 1.3em;
+}
