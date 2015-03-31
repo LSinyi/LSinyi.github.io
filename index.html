@@ -17,6 +17,10 @@
     <link href="./style/css/resume.css" rel="stylesheet" />
     <!-- animata.css -->
     <link href="./style/css/animate.css" rel="stylesheet" />
+    <!-- owl carousel css -->
+    <link href="./style/css/owl.carousel.css" rel="stylesheet" />
+    <link href="./style/css/owl.theme.css" rel="stylesheet" />
+    <link href="./style/css/owl.transitions.css" rel="stylesheet" />
     <!-- fullpage.css -->
     <!-- <link rel="stylesheet" type="text/css" href="./style/css/jquery.fullPage.css" /> -->
     <link rel="stylesheet" type="text/css" href="./style/css/font-awesome.min.css" />
@@ -28,6 +32,10 @@
     <script src="./javascript/jquery.backstretch.min.js"></script>
     <!-- fullpage.js -->
     <script type="text/javascript" src="./javascript/jquery.fullPage.js"></script>
+    <!-- owl carousel.js -->
+    <script src="./javascript/owl.carousel.min.js"></script>
+    <!-- easing.js -->
+    <script src="./javascript/jquery.easing.1.3.js"></script>
 </head>
 
 <body>
@@ -39,32 +47,40 @@
         <!-- left-side -->
         <section id="left-side">
             <ul class="menu">
-                <li>
+                <li onclick="scroll_top();">
+                    <a>Home
+                        <span class="tip-content"><i class="fa fa-home"></i></span>
+                    </a>
+                </li>
+                <li class="item">
                     <a href="#introduce">about me
                         <span class="tip-content"><i class="fa fa-user"></i></span>
                     </a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="#skills">skills
                         <span class="tip-content"><i class="fa fa-wrench"></i></span>
                     </a>
                 </li>
-                <li>
+                <!-- <li class="item" onclick="scroll_to_article">
                     <a href="#interests">interests
                         <span class="tip-content"><i class="fa fa-heart"></i></span>
                     </a>
-                </li>
-                <li>
-                    <a href="#">gallery
+                </li> -->
+                <li class="item">
+                    <a href="#gallery">gallery
                         <span class="tip-content"><i class="fa fa-photo"></i></span>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact">contact
+                    <a href="#">contact
                         <span class="tip-content"><i class="fa fa-comments"></i></span>
                     </a>
                 </li>
             </ul>
+            <div id="go-top" onclick="scroll_top();">
+                <span><i class="fa fa-angle-up fa-2x"></i></span>
+            </div>
         </section>
         <!-- end: left-side -->
         <!-- main -->
@@ -72,7 +88,7 @@
             <!-- home -->
             <article id="home" class="wrap-section clearfix">
                 <div class="wrap-content clearfix">
-                    <div class="col-md-8 main-describe">
+                    <div class="col-md-8 main-describe wow fadeInUp" data-wow-delay="0.5s">
                         <h2>Sin-Yi Liao (Shin)</h2>
                         <p>Junior Web Developer, Baseball Lover
                             <br>From Taichung , Tiawan</p>
@@ -89,7 +105,7 @@
                     <div class="content-title">
                         About Me
                     </div>
-                    <div class="row intro-back">
+                    <div class="row intro-back wow fadeInUp">
                         <div class="col-md-12" style="margin-bottom: 30px;">
                             <div class="col-md-6">
                                 <div class="aboutme-photo">
@@ -120,7 +136,7 @@
                                     <p>funcrazyjam@gmail.com</p>
                                     <p>Wuri, Taichung, Taiwan</p>
                                     <p>Line liao715</p>
-                                    <div><a href="#">Resume</a>
+                                    <div><a onclick="open_modal(event, 'modal-resume');">Resume</a>
                                     </div>
                                 </section>
                             </div>
@@ -158,7 +174,7 @@
                     <div class="content-title">
                         Skills
                     </div>
-                    <div class="row skills-back">
+                    <div class="row skills-back wow fadeInUp">
                         <div class="col-md-12 skill-program">
                             <h2>PROGRAM<br>SKILL .</h2>
                             <div class="divide"></div>
@@ -194,7 +210,7 @@
             </article>
             <!-- end: skills -->
             <!-- interests -->
-            <article id="interests" class="wrap-section clearfix">
+            <!-- <article id="interests" class="wrap-section clearfix">
                 <div class="wrap-content clearfix">
                     <div class="content-title">
                         Interests
@@ -254,11 +270,275 @@
                         </div>
                     </div>
                 </div>
-            </article>
+            </article> -->
             <!-- end: interests -->
+            <!-- The gallery -->
+            <article id="gallery" class="wrap-section clearfix">
+                <div class="wrap-content clearfix">
+                    <div class="content-title">
+                        Gallery
+                    </div>
+                    <!-- test -->
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <ul class="group">
+                                <!-- gallery1 -->
+                                <li class="gallery-box wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/business-mockup.png">
+                                            <a onclick="open_modal(event, 'modal-content-1');">
+                                                <h2>Business Card Realistic</h2>
+                                                <p>The Business Card on the desk which is made of wood.</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery2 -->
+                                <li class="gallery-box wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/interests-card.png">
+                                            <a onclick="open_modal(event, 'modal-content-2');">
+                                                <h2>The Tent-Fold Card</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery3 -->
+                                <li class="gallery-box wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/interests-2.png">
+                                            <a onclick="open_modal(event, 'modal-content-3');">
+                                                <h2>Business card display</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="group group2">
+                                <!-- gallery4 -->
+                                <li class="gallery-box wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/business-black-yellow.png">
+                                            <a onclick="open_modal(event, 'modal-content-4');">
+                                                <h2>Business card Black-Style</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery5 -->
+                                <li class="gallery-box wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/business-card-blue.png">
+                                            <a onclick="open_modal(event, 'modal-content-5');">
+                                                <h2>Business card Blue-Style</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery6 -->
+                                <li class="gallery-box wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/star-sky.png">
+                                            <a onclick="open_modal(event, 'modal-content-6');">
+                                                <h2>The StarSky of icon</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <ul class="group">
+                                <!-- gallery7 -->
+                                <li class="gallery-box">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/business-mockup.png">
+                                            <a onclick="open_modal(event, 'modal-content-1');">
+                                                <h2>Business Card Realistic</h2>
+                                                <p>The Business Card on the desk which is made of wood.</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery8 -->
+                                <li class="gallery-box">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/interests-card.png">
+                                            <a onclick="open_modal(event, 'modal-content-2');">
+                                                <h2>The Tent-Fold Card</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery9 -->
+                                <li class="gallery-box">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/interests-2.png">
+                                            <a onclick="open_modal(event, 'modal-content-3');">
+                                                <h2>Business card display</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="group group2">
+                                <!-- gallery10 -->
+                                <li class="gallery-box">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/business-black-yellow.png">
+                                            <a onclick="open_modal(event, 'modal-content-4');">
+                                                <h2>Business card Black-Style</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery11 -->
+                                <li class="gallery-box">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/business-card-blue.png">
+                                            <a onclick="open_modal(event, 'modal-content-5');">
+                                                <h2>Business card Blue-Style</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- gallery12 -->
+                                <li class="gallery-box">
+                                    <div class="gallery-frame">
+                                        <div class="photo">
+                                            <img src="./style/images/star-sky.png">
+                                            <a onclick="open_modal(event, 'modal-content-6');">
+                                                <h2>The StarSky of icon</h2>
+                                                <p>commentsssssssssssssssssssssssssssssssssssss about me so why not?</p>
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <img src="./style/images/sin.png">
+                                            <span>sinyi</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade bs-example-modal-lg" id="model-common" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Modal -->
 
-
-            <article id="contact" class="wrap-section clearfix">
+                    <!-- modal-content -->
+                    <!-- resume-->
+                    <div class="pop-to-modal" id="modal-resume">
+                        <img src="./style/images/paper-resume.png">
+                        <div class="photo-title">Sinyi's Resume</div>
+                    </div>
+                    <!-- gallery-1-->
+                    <div class="pop-to-modal" id="modal-content-1">
+                        <img src="./style/images/business-mockup.png">
+                        <div class="photo-title">Business Card Realistic</div>
+                    </div>
+                    <!-- gallery-2-->
+                    <div class="pop-to-modal" id="modal-content-2">
+                        <img src="./style/images/interests-card.png">
+                        <div class="photo-title">The Tent-Fold Card</div>
+                    </div>
+                    <!-- gallery-3-->
+                    <div class="pop-to-modal" id="modal-content-3">
+                        <img src="./style/images/interests-2.png">
+                        <div class="photo-title">Business card display</div>
+                    </div>
+                    <!-- gallery-4-->
+                    <div class="pop-to-modal" id="modal-content-4">
+                        <img src="./style/images/business-black-yellow.png">
+                        <div class="photo-title">Business card Black-Style</div>
+                    </div>
+                    <!-- gallery-5-->
+                    <div class="pop-to-modal" id="modal-content-5">
+                        <img src="./style/images/business-card-blue.png">
+                        <div class="photo-title">Business card Blue-Style</div>
+                    </div>
+                    <!-- gallery-6-->
+                    <div class="pop-to-modal" id="modal-content-6">
+                        <img src="./style/images/star-sky.png">
+                        <div class="photo-title">The StarSky of icon</div>
+                    </div>
+                    <!-- end: modalcontent -->
+                </div>
+            </article>
+            <!-- end: The gallery -->
+            <!-- contact -->
+            <!-- <article id="contact" class="wrap-section clearfix">
                 <div class="wrap-content clearfix">
                     <div class="content-title">
                         Contact
@@ -270,7 +550,8 @@
                         <button type="submit" name="button" id="button">Submit</button>
                     </form>
                 </div>
-            </article>
+            </article> -->
+            <!-- end: contact -->
         </section>
         <!-- end: main -->
     </div>

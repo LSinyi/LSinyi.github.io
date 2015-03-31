@@ -59,11 +59,12 @@
   border: 1px solid #ffffff;
   letter-spacing: 1px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .intro-back .aboutme-info a:hover {
-  background: #5DADE2;
-  border: 1px solid #5DADE2;
-  color: #fff;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #5DADE2;
   font-weight: 400;
 }
 .intro-back .aboutme-ed-ex-pj {

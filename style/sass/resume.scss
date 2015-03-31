@@ -8,14 +8,18 @@
 @import "aboutme";
 @import "skills";
 @import "interests";
+@import "gallery";
 @import "compass/css3";
-$fontfamily: 'Raleway', sans-serif, Microsoft JhengHei;
+$fontfamily: 'Raleway',
+sans-serif,
+Microsoft JhengHei;
 $menu-icon-color: #5DADE2;
 /**************************************/
 
 body {
     font-family: $fontfamily;
 }
+
 .backgound-overlay {
     display: block;
     position: fixed;
@@ -26,6 +30,7 @@ body {
     left: 0;
     background: #000;
 }
+
 //最外框包覆
 .outer-content {
     display: block;
@@ -41,6 +46,7 @@ body {
         @include background(linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)));
     }
 }
+
 //共用content
 #main-content {
     display: block;
@@ -68,9 +74,10 @@ body {
         }
     }
 }
+
 //左邊選單
 ul.menu {
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: center;
     li {
         transition: background 0.5s;
@@ -87,6 +94,7 @@ ul.menu {
         }
     }
 }
+
 //圖標
 .tip-content {
     position: absolute;
@@ -118,6 +126,38 @@ ul.menu {
         transform: rotate(-90deg);
     }
 }
+
 ul.menu li:hover .tip-content {
     transform: scale3d(1, 1, 1); //last
+}
+
+//home
+#home {
+    color: #fff;
+}
+
+//scroll-to-top
+#go-top {
+    position: absolute;
+    bottom: 10%;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0;
+    cursor: default;
+    span {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    &:hover {
+        background: rgba(0, 0, 0, 0.5);
+        span {
+            color: #fff;
+        }
+    }
+    &.active {
+        cursor: pointer;
+        opacity: 1;
+    }
 }

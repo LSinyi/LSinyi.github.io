@@ -149,11 +149,12 @@ a:hover, a:focus, a:active {
   border: 1px solid #ffffff;
   letter-spacing: 1px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .intro-back .aboutme-info a:hover {
-  background: #5DADE2;
-  border: 1px solid #5DADE2;
-  color: #fff;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #5DADE2;
   font-weight: 400;
 }
 .intro-back .aboutme-ed-ex-pj {
@@ -312,6 +313,116 @@ a:hover, a:focus, a:active {
   line-height: 1.3em;
 }
 
+/*************************/
+ul.group {
+  margin-top: 35px;
+}
+ul.group li.gallery-box {
+  width: 28%;
+  display: inline-block;
+  margin-right: 5%;
+}
+ul.group li.gallery-box .gallery-frame {
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  padding: 10px 10px 5px 10px;
+}
+ul.group li.gallery-box .gallery-frame .photo {
+  position: relative;
+  max-width: 100%;
+}
+ul.group li.gallery-box .gallery-frame .photo img {
+  max-width: 100%;
+}
+ul.group li.gallery-box .gallery-frame .photo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #000;
+  opacity: 0;
+  transition: opacity .5s;
+  cursor: pointer;
+}
+ul.group li.gallery-box .gallery-frame .photo a:hover {
+  opacity: 1;
+}
+ul.group li.gallery-box .gallery-frame .photo a h2 {
+  color: #444444;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+ul.group li.gallery-box .gallery-frame .photo a p {
+  overflow: hidden;
+  color: #777777;
+  line-height: 1.4;
+  font-size: 0.8em;
+}
+ul.group li.gallery-box .gallery-frame .author {
+  margin: 5px 0 0 0;
+  color: #1f8fc9;
+}
+ul.group li.gallery-box .gallery-frame .author img {
+  width: 25px;
+}
+ul.group li.gallery-box .gallery-frame .author span {
+  position: relative;
+  top: -7px;
+  left: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+ul.group2 {
+  margin-top: 5%;
+}
+
+/*******modal*******/
+.modal-dialog {
+  width: 64%;
+}
+.modal-dialog .modal-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0;
+}
+.modal-dialog .modal-content .modal-body {
+  position: relative;
+  padding: 0;
+}
+.modal-dialog .modal-content .modal-body img {
+  width: 100%;
+}
+.modal-dialog .modal-content .modal-body .transparent-line {
+  position: absolute;
+  top: 3.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 90%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+.modal-dialog .modal-content .modal-body .photo-title {
+  text-align: center;
+  margin: 7px 0;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.pop-to-modal {
+  display: none;
+}
+
+.owl-pagination {
+  margin-top: 25px;
+  margin-left: -5%;
+}
+
 /**************************************/
 body {
   font-family: "Raleway", sans-serif, Microsoft JhengHei;
@@ -374,7 +485,7 @@ body {
 }
 
 ul.menu {
-  margin-top: 100px;
+  margin-top: 150px;
   text-align: center;
 }
 ul.menu li {
@@ -425,4 +536,33 @@ ul.menu li a {
 
 ul.menu li:hover .tip-content {
   transform: scale3d(1, 1, 1);
+}
+
+#home {
+  color: #fff;
+}
+
+#go-top {
+  position: absolute;
+  bottom: 10%;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0;
+  cursor: default;
+}
+#go-top span {
+  color: rgba(255, 255, 255, 0.5);
+}
+#go-top:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+#go-top:hover span {
+  color: #fff;
+}
+#go-top.active {
+  cursor: pointer;
+  opacity: 1;
 }
