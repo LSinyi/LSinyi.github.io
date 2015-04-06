@@ -19,6 +19,7 @@ ul.group li.gallery-box .gallery-frame .photo {
 }
 ul.group li.gallery-box .gallery-frame .photo img {
   max-width: 100%;
+  min-height: 150px;
 }
 ul.group li.gallery-box .gallery-frame .photo a {
   position: absolute;

@@ -334,6 +334,7 @@ ul.group li.gallery-box .gallery-frame .photo {
 }
 ul.group li.gallery-box .gallery-frame .photo img {
   max-width: 100%;
+  min-height: 150px;
 }
 ul.group li.gallery-box .gallery-frame .photo a {
   position: absolute;
@@ -421,6 +422,72 @@ ul.group2 {
 .owl-pagination {
   margin-top: 25px;
   margin-left: -5%;
+}
+
+/*************************/
+.project-back {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  color: #fff;
+}
+.project-back .project-des {
+  position: relative;
+  margin-left: 1%;
+  margin-right: 5%;
+}
+.project-back .project-des:first-child {
+  margin-top: 45px;
+}
+.project-back .project-des h2 {
+  width: 145px;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 10px;
+  line-height: 1.3;
+  color: #bac2c1;
+  text-align: right;
+}
+.project-back .project-des .divide {
+  position: absolute;
+  top: -2px;
+  left: 150px;
+  width: 1px;
+  height: 25px;
+  background: #4c4c4c;
+}
+.project-back .project-des p {
+  position: relative;
+  top: -22px;
+  left: 180px;
+  width: 80%;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.project-back .project-des .design-item {
+  position: relative;
+  top: -2px;
+  left: 180px;
+  width: 86%;
+}
+.project-back .project-des .design-item ul.design-group li {
+  display: inline-block;
+  height: 100px;
+}
+.project-back .project-des .design-item ul.design-group li.design-img {
+  width: 60%;
+  background: #fff;
+}
+.project-back .project-des .design-item ul.design-group li.design-img img {
+  width: 100%;
+}
+.project-back .project-des .design-item ul.design-group li.design-des {
+  width: 30%;
+  background: #5DADE2;
 }
 
 /**************************************/
