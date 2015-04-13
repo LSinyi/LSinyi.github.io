@@ -9,7 +9,7 @@
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <!-- CSS -->
@@ -136,7 +136,7 @@
                                     <p>funcrazyjam@gmail.com</p>
                                     <p>Wuri, Taichung, Taiwan</p>
                                     <p>Line liao715</p>
-                                    <div><a onclick="open_modal(event, 'modal-resume');">Resume</a>
+                                    <div><a onclick="open_modal('modal-resume');">Resume</a>
                                     </div>
                                 </section>
                             </div>
@@ -287,7 +287,7 @@
                                     <div class="gallery-frame">
                                         <div class="photo">
                                             <img src="./style/images/business-mockup.png">
-                                            <a onclick="open_modal(event, 'modal-content-1');">
+                                            <a onclick="open_modal('modal-content-1');">
                                                 <h2>Business Card Realistic</h2>
                                                 <p>The Business Card on the desk which is made of wood.</p>
                                             </a>
@@ -303,7 +303,7 @@
                                     <div class="gallery-frame">
                                         <div class="photo">
                                             <img src="./style/images/interests-card.png">
-                                            <a onclick="open_modal(event, 'modal-content-2');">
+                                            <a onclick="open_modal('modal-content-2');">
                                                 <h2>The Tent-Fold Card</h2>
                                                 <p>The card of interests which is my favourites in leisure time. </p>
                                             </a>
@@ -319,7 +319,7 @@
                                     <div class="gallery-frame">
                                         <div class="photo">
                                             <img src="./style/images/interests-2.png">
-                                            <a onclick="open_modal(event, 'modal-content-3');">
+                                            <a onclick="open_modal('modal-content-3');">
                                                 <h2>Interests Icon On iphone</h2>
                                                 <p>The UI of the icon display on iphone. Include three color.</p>
                                             </a>
@@ -337,7 +337,7 @@
                                     <div class="gallery-frame">
                                         <div class="photo">
                                             <img src="./style/images/business-black-yellow.png">
-                                            <a onclick="open_modal(event, 'modal-content-4');">
+                                            <a onclick="open_modal('modal-content-4');">
                                                 <h2>Business Card Black-Style</h2>
                                                 <p>The Business card style of black and yellow at the sunset background.</p>
                                             </a>
@@ -353,7 +353,7 @@
                                     <div class="gallery-frame">
                                         <div class="photo">
                                             <img src="./style/images/business-card-blue.png">
-                                            <a onclick="open_modal(event, 'modal-content-5');">
+                                            <a onclick="open_modal('modal-content-5');">
                                                 <h2>Business Card Blue-Style</h2>
                                                 <p>The Business card is my first design card style.</p>
                                             </a>
@@ -369,7 +369,7 @@
                                     <div class="gallery-frame">
                                         <div class="photo">
                                             <img src="./style/images/star-sky.png">
-                                            <a onclick="open_modal(event, 'modal-content-6');">
+                                            <a onclick="open_modal('modal-content-6');">
                                                 <h2>Icon In The Sky</h2>
                                                 <p>The icon made of which use blue deep and light blue of gradient.</p>
                                             </a>
@@ -389,7 +389,7 @@
                                     <div class="gallery-frame">
                                         <div class="photo">
                                             <img src="./style/images/lab.png">
-                                            <a onclick="open_modal(event, 'modal-content-7');">
+                                            <a onclick="open_modal('modal-content-7');">
                                                 <h2>Laboratory HomePage</h2>
                                                 <p>The background which is laboratory homepage. The dragon is us mascot.</p>
                                             </a>
@@ -485,17 +485,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- Modal -->
-                    <div class="modal fade bs-example-modal-lg" id="model-common" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end: Modal -->
-                    <!-- modal-content -->
+                    <!-- modal-content-gallery -->
                     <!-- resume-->
                     <div class="pop-to-modal" id="modal-resume">
                         <img src="./style/images/paper-resume.png">
@@ -536,7 +526,7 @@
                         <img src="./style/images/lab.png">
                         <div class="photo-title">Laboratory HomePage</div>
                     </div>
-                    <!-- end: modalcontent -->
+                    <!-- end: modal-content-gallery -->
                 </div>
             </article>
             <!-- end: The gallery -->
@@ -568,27 +558,137 @@
                             <p>獲得國科會大專學生專題研究計畫補助</p>
                         </div>
                         <div class="project-des">
-                            <h2>我所設計</h2>
-                            <div class="divide"></div>
-                            <div class="design-item">
-                                <ul class="design-group">
-                                    <li class="design-img">
+                            <h2 class="design-title">我所設計</h2>
+                            <ul class="design-group">
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-1');">
                                         <img src="./style/images/teacher_mode_b.png">
-                                    </li>
-                                    <li class="design-des"></li>
-                                </ul>
-                                <ul class="design-group">
-                                    <li class="design-img">
-                                        <img src="./style/images/bg3.jpg">
-                                    </li>
-                                    <li class="design-des"></li>
-                                </ul>
-                            </div>
+                                        <a>
+                                            <h3>教師端首頁</h3>
+                                            <span>首頁提供上課模式、編輯教材、班級概況、作業管理、公告事項、編輯單元測驗、帳號管理、學生學習概況讓教師選擇要進行的模式。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-2');">
+                                        <img src="./style/images/teacher_all_b.png">
+                                        <a>
+                                            <h3>教師端各功能頁面</h3>
+                                            <span>各個功能操作頁面。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-3');">
+                                        <img src="./style/images/challenge_b.png">
+                                        <a>
+                                            <h3>挑戰績分</h3>
+                                            <span>完成一定的成就，就能獲得一個勳章，在勳章庫會呈現所獲得勳章個數狀態。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="design-group">
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-4');">
+                                        <img src="./style/images/learn_process_b.png">
+                                        <a>
+                                            <h3>學習歷程頁面</h3>
+                                            <span>學習歷程包括個人資料、學習記錄、專案管理、學習指標地圖。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-5');">
+                                        <img src="./style/images/uni_material.png">
+                                        <a>
+                                            <h3>課程教材頁面</h3>
+                                            <span>單元教材共有十章與數個章節，可供使用者學習。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-6');">
+                                        <img src="./style/images/learn_map.png">
+                                        <a>
+                                            <h3>課程地圖頁面</h3>
+                                            <span>呈現全部章節的關聯圖，讓使用者了解各個章節之間的相關重要性。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="design-group">
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-7');">
+                                        <img src="./style/images/test_chioce.png">
+                                        <a>
+                                            <h3>單元測驗頁面</h3>
+                                            <span>此頁面採用選擇題方式，供使用者學習完章節後可立即測驗。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="design-box">
+                                    <div class="design-frame" onclick="open_modal('modal-content-project-8');">
+                                        <img src="./style/images/test_fill.png">
+                                        <a>
+                                            <h3>填充測驗頁面</h3>
+                                            <span>測驗採用填充方式，難度較選擇題高，適合進階者挑戰。</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
                         </div>
                     </div>
+
+
+                    <!-- modal-content-project -->
+                    <div class="pop-to-modal" id="modal-content-project-1">
+                        <img src="./style/images/teacher_mode_a.png">
+                        <div class="photo-title">教師端首頁</div>
+                    </div>
+                    <div class="pop-to-modal" id="modal-content-project-2">
+                        <img src="./style/images/teacher_all_a.png">
+                        <div class="photo-title">教師端各功能頁面</div>
+                    </div>
+                    <div class="pop-to-modal" id="modal-content-project-3">
+                        <img src="./style/images/challenge_a.png">
+                        <div class="photo-title">挑戰績分</div>
+                    </div>
+                    <div class="pop-to-modal" id="modal-content-project-4">
+                        <img src="./style/images/learn_process_a.png">
+                        <div class="photo-title">學習歷程頁面</div>
+                    </div>
+                    <div class="pop-to-modal" id="modal-content-project-5">
+                        <img src="./style/images/uni_material.png">
+                        <div class="photo-title">課程教材頁面</div>
+                    </div>
+                    <div class="pop-to-modal" id="modal-content-project-6">
+                        <img src="./style/images/learn_map.png">
+                        <div class="photo-title">課程地圖頁面</div>
+                    </div>
+                    <div class="pop-to-modal" id="modal-content-project-7">
+                        <img src="./style/images/test_chioce.png">
+                        <div class="photo-title">單元測驗頁面</div>
+                    </div>
+                    <div class="pop-to-modal" id="modal-content-project-8">
+                        <img src="./style/images/test_fill.png">
+                        <div class="photo-title">填充測驗頁面</div>
+                    </div>
+                    <!-- end: modal-content-project -->
                 </div>
             </article>
             <!-- end: contact -->
+
+            <!-- Modal -->
+            <div class="modal fade bs-example-modal-lg" id="model-common" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: Modal -->
         </section>
         <!-- end: main -->
     </div>

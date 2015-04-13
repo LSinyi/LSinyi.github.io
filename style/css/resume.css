@@ -384,41 +384,6 @@ ul.group2 {
   margin-top: 5%;
 }
 
-/*******modal*******/
-.modal-dialog {
-  width: 64%;
-}
-.modal-dialog .modal-content {
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 0;
-}
-.modal-dialog .modal-content .modal-body {
-  position: relative;
-  padding: 0;
-}
-.modal-dialog .modal-content .modal-body img {
-  width: 100%;
-}
-.modal-dialog .modal-content .modal-body .transparent-line {
-  position: absolute;
-  top: 3.5%;
-  left: 2.5%;
-  width: 95%;
-  height: 90%;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-}
-.modal-dialog .modal-content .modal-body .photo-title {
-  text-align: center;
-  margin: 7px 0;
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-
-.pop-to-modal {
-  display: none;
-}
-
 .owl-pagination {
   margin-top: 25px;
   margin-left: -5%;
@@ -468,26 +433,90 @@ ul.group2 {
   letter-spacing: 2px;
   line-height: 1.5;
 }
-.project-back .project-des .design-item {
-  position: relative;
-  top: -2px;
-  left: 180px;
-  width: 86%;
+.project-back .project-des .design-group {
+  margin-top: 4.5%;
 }
-.project-back .project-des .design-item ul.design-group li {
+.project-back .project-des .design-group .design-box {
+  width: 28%;
   display: inline-block;
-  height: 100px;
+  margin-left: 4.5%;
 }
-.project-back .project-des .design-item ul.design-group li.design-img {
-  width: 60%;
-  background: #fff;
+.project-back .project-des .design-group .design-box .design-frame {
+  position: relative;
+  cursor: pointer;
 }
-.project-back .project-des .design-item ul.design-group li.design-img img {
+.project-back .project-des .design-group .design-box .design-frame:hover a {
+  height: 100%;
+}
+.project-back .project-des .design-group .design-box .design-frame img {
+  max-width: 100%;
+}
+.project-back .project-des .design-group .design-box .design-frame a {
+  position: absolute;
+  padding: 0 10px 0 15px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.project-back .project-des .design-group .design-box .design-frame a h3 {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.project-back .project-des .design-group .design-box .design-frame a span {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #d3d3d3;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.project-back .project-des .design-title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  letter-spacing: 10px;
+  padding-left: 6px;
+}
+
+/*modal*/
+.modal-dialog {
+  width: 64%;
+}
+.modal-dialog .modal-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0;
+}
+.modal-dialog .modal-content .modal-body {
+  position: relative;
+  padding: 0;
+}
+.modal-dialog .modal-content .modal-body img {
   width: 100%;
 }
-.project-back .project-des .design-item ul.design-group li.design-des {
-  width: 30%;
-  background: #5DADE2;
+.modal-dialog .modal-content .modal-body .transparent-line {
+  position: absolute;
+  top: 3.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 90%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+.modal-dialog .modal-content .modal-body .photo-title {
+  text-align: center;
+  margin: 7px 0;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.pop-to-modal {
+  display: none;
 }
 
 /**************************************/
