@@ -11,12 +11,11 @@ $color-skyblue: #2ebbaf;
 .skills-back {
     margin: 0;
     padding: 0;
-    height: 305px;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1px;
     color: $color-white;
-    .skill-program, .skill-other {
+    .skill-program, .skill-other, .skill-tool {
         padding-top: 55px;
         padding-left: 45px;
         h2 {
@@ -53,13 +52,40 @@ $color-skyblue: #2ebbaf;
                     text-align: center;
                     line-height: 30px;
                     letter-spacing: 1px;
+                    transition: background, 0.3s;
+                    &:hover {
+                        background: lighten($color-pink, 10%);
+                    }
                 }
                 li.design {
                     background: $color-orange;
+                    &:hover {
+                        background: lighten($color-orange, 10%);
+                    }
                 }
                 li.tool {
+                    width: 120px;
                     background: $color-skyblue;
+                    &:hover {
+                        background: lighten($color-skyblue, 10%);
+                    }
                 }
+            }
+        }
+    }
+    .skill-bottom {
+        padding: 0;
+        .img-mac {
+            padding: 20px 0;
+            height: 150px;
+            // background-image: url("../images/mac.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            p {
+                text-align: center;
+                padding: 10px 0;
+                letter-spacing: 10px;
+                font-weight: 300;
             }
         }
     }

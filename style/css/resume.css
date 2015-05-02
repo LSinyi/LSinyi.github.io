@@ -188,17 +188,16 @@ a:hover, a:focus, a:active {
 .skills-back {
   margin: 0;
   padding: 0;
-  height: 305px;
   background: rgba(0, 0, 0, 0.6);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   border-radius: 1px;
   color: #ffffff;
 }
-.skills-back .skill-program, .skills-back .skill-other {
+.skills-back .skill-program, .skills-back .skill-other, .skills-back .skill-tool {
   padding-top: 55px;
   padding-left: 45px;
 }
-.skills-back .skill-program h2, .skills-back .skill-other h2 {
+.skills-back .skill-program h2, .skills-back .skill-other h2, .skills-back .skill-tool h2 {
   position: relative;
   width: 145px;
   font-size: 1.7em;
@@ -206,7 +205,7 @@ a:hover, a:focus, a:active {
   letter-spacing: 1px;
   line-height: 1.3;
 }
-.skills-back .skill-program .divide, .skills-back .skill-other .divide {
+.skills-back .skill-program .divide, .skills-back .skill-other .divide, .skills-back .skill-tool .divide {
   position: absolute;
   top: 55px;
   left: 230px;
@@ -214,15 +213,15 @@ a:hover, a:focus, a:active {
   height: 70px;
   background: #4c4c4c;
 }
-.skills-back .skill-program .item, .skills-back .skill-other .item {
+.skills-back .skill-program .item, .skills-back .skill-other .item, .skills-back .skill-tool .item {
   position: absolute;
   top: 55px;
   left: 275px;
 }
-.skills-back .skill-program .item ul, .skills-back .skill-other .item ul {
+.skills-back .skill-program .item ul, .skills-back .skill-other .item ul, .skills-back .skill-tool .item ul {
   margin-top: -5px;
 }
-.skills-back .skill-program .item ul li, .skills-back .skill-other .item ul li {
+.skills-back .skill-program .item ul li, .skills-back .skill-other .item ul li, .skills-back .skill-tool .item ul li {
   float: left;
   width: 100px;
   height: 30px;
@@ -234,12 +233,38 @@ a:hover, a:focus, a:active {
   text-align: center;
   line-height: 30px;
   letter-spacing: 1px;
+  transition: background, 0.3s;
 }
-.skills-back .skill-program .item ul li.design, .skills-back .skill-other .item ul li.design {
+.skills-back .skill-program .item ul li:hover, .skills-back .skill-other .item ul li:hover, .skills-back .skill-tool .item ul li:hover {
+  background: #f98a96;
+}
+.skills-back .skill-program .item ul li.design, .skills-back .skill-other .item ul li.design, .skills-back .skill-tool .item ul li.design {
   background: #e6ad37;
 }
-.skills-back .skill-program .item ul li.tool, .skills-back .skill-other .item ul li.tool {
+.skills-back .skill-program .item ul li.design:hover, .skills-back .skill-other .item ul li.design:hover, .skills-back .skill-tool .item ul li.design:hover {
+  background: #ecc064;
+}
+.skills-back .skill-program .item ul li.tool, .skills-back .skill-other .item ul li.tool, .skills-back .skill-tool .item ul li.tool {
+  width: 120px;
   background: #2ebbaf;
+}
+.skills-back .skill-program .item ul li.tool:hover, .skills-back .skill-other .item ul li.tool:hover, .skills-back .skill-tool .item ul li.tool:hover {
+  background: #4ad2c7;
+}
+.skills-back .skill-bottom {
+  padding: 0;
+}
+.skills-back .skill-bottom .img-mac {
+  padding: 20px 0;
+  height: 150px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.skills-back .skill-bottom .img-mac p {
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 10px;
+  font-weight: 300;
 }
 
 /*************************/
