@@ -73,3 +73,50 @@ ul.group2 {
   margin-top: 25px;
   margin-left: -5%;
 }
+
+.sprite {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-business-black-yellow {
+  width: 780px;
+  height: 500px;
+  background-position: -5px -5px;
+}
+
+.sprite-business-card-blue {
+  width: 780px;
+  height: 500px;
+  background-position: -5px -515px;
+}
+
+.sprite-business-mockup {
+  background-position: -5px -1025px;
+  background-size: contain;
+}
+
+.sprite-interests-2 {
+  width: 900px;
+  height: 577px;
+  background-position: -5px -1542px;
+}
+
+.sprite-interests-card {
+  width: 780px;
+  height: 500px;
+  background-position: -5px -2129px;
+}
+
+.sprite-lab {
+  width: 1366px;
+  height: 768px;
+  background-position: -5px -2639px;
+}
+
+.sprite-star-sky {
+  width: 780px;
+  height: 500px;
+  background-position: -5px -3417px;
+}
